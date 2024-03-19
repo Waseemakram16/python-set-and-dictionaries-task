@@ -1,0 +1,17 @@
+analyzer = DataAnalyzer()
+analyzer.add_to_set([1, 2, 3, 4, 5])
+print(analyzer.get_set())  # Output: {1, 2, 3, 4, 5}
+
+analyzer.remove_from_set(3)
+print(analyzer.get_set())  # Output: {1, 2, 4, 5}
+
+analyzer.create_dictionary(['a', 'b', 'c'], [1, 2, 3])
+print(analyzer.get_dictionary())  # Output: {'a': 1, 'b': 2, 'c': 3}
+
+analyzer.update_dictionary('d', 4)
+print(analyzer.get_dictionary())  # Output: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+
+print(analyzer.search_dictionary('b'))  # Output: True
+
+analyzer.remove_from_dictionary('c')
+print(analyzer.get_dictionary())  # Output: {'a': 1, 'b': 2, 'd': 4}
